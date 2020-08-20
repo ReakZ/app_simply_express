@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "0fa1debf-058f-44af-b402-28e7418ef750",
+		"name": "tester",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"dasdadasd@mail.ru\",\r\n    \"password\":\"basasdasd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"pasdasdd\",\r\n    \"email\":\"dasdadasd@mail.ru\",\r\n    \"password\":\"basasdasd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/user/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjNkNTg4MzM1YzMwYTBjOTRkMDI0NDQiLCJpYXQiOjE1OTc4NTk5MTF9.HrOPXRxr-pMObHxyeF4oVBdfoxM5pUTXPzl1tumnd_s",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/posts?auth-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjNkNTg4MzM1YzMwYTBjOTRkMDI0NDQiLCJpYXQiOjE1OTc4NTk5MTF9.HrOPXRxr-pMObHxyeF4oVBdfoxM5pUTXPzl1tumnd_s",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"posts"
+					],
+					"query": [
+						{
+							"key": "auth-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjNkNTg4MzM1YzMwYTBjOTRkMDI0NDQiLCJpYXQiOjE1OTc4NTk5MTF9.HrOPXRxr-pMObHxyeF4oVBdfoxM5pUTXPzl1tumnd_s"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
